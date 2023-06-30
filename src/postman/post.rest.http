@@ -1,0 +1,32 @@
+@url=http://localhost:8888/api/v1/posts
+
+### CREATE
+POST {{url}}
+Content-Type: application/json
+x-client-id: 649e7d088f51a5e7c223d95b
+
+{
+  "display_name": "Nguyễn Chủ",
+  "username": "nguyenchu",
+  "password": "nghuyenchu",
+  "roles": ["649e6de185e023c10002a054"]
+}
+
+### Update
+PATCH {{url}}/649e5c1e7d7305f3931700a3
+Content-Type: application/json
+x-client-id: 649e7d088f51a5e7c223d95b
+
+{
+  "name": "Product Manager",
+  "desc": "Quản lý sản phẩm",
+  "permissions": ["649e5327c87767850e8ef701", "649e534ac87767850e8ef708"]
+}
+
+### GET
+GET {{url}}
+x-client-id: 649e7d088f51a5e7c223d95b
+
+### GET ID
+GET {{url}}/649e75730736879f80380e2e
+x-client-id: 649e7d088f51a5e7c223d95b

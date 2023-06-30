@@ -5,23 +5,21 @@ POST {{url}}
 Content-Type: application/json
 
 {
-  "name": "Product Manager",
-  "desc": "Quản lý sản phẩm",
-  "permissions": ["649e5327c87767850e8ef701", "649e534ac87767850e8ef708"]
+  "name": "Chủ doanh nghiệp",
+  "desc": "Quản lý bài viết",
+  "permissions": ["649e5327c87767850e8ef701", "649e534ac87767850e8ef708", "649e6cd485e023c10002a02d", "649e6ce485e023c10002a031", "649e6d3b85e023c10002a036", "649e6d4985e023c10002a03a", "649e6d5485e023c10002a03e", "649e6d5c85e023c10002a042"]
 }
 
 ### Update
-PATCH {{url}}/649e5c1e7d7305f3931700a3
+PATCH {{url}}/649e6d9c85e023c10002a047
 Content-Type: application/json
 
 {
-  "name": "Product Manager",
-  "desc": "Quản lý sản phẩm",
-  "permissions": ["649e5327c87767850e8ef701", "649e534ac87767850e8ef708"]
+  "permissions": ["649e6d5c85e023c10002a042", "649e6d3b85e023c10002a036"]
 }
 
 ### GET
 GET {{url}}
 
 ### GET ID
-GET {{url}}/649e5c1e7d7305f3931700a3
+GET {{url}}/649e6de185e023c10002a054

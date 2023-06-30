@@ -1,3 +1,5 @@
+"use strict";
+
 const dayjs = require("dayjs");
 
 const logger = {

@@ -56,20 +56,22 @@ const roleService = {
     // return await RoleModel.find().lean();
     return true;
   },
-  update: async (id, { name, desc, permissions }) => {
-    let role = await RoleModel.findOne({
-      name: toLowerCase(name),
-    });
+  update: async (id, data) => {
+    if (data.name) {
+      let role = await RoleModel.findOne({
+        name: toLowerCase(data.name),
+      });
 
-    if (role && id !== role._id.toString()) {
-      throw new ConflictRequestError("Name exists");
+      if (role && id !== role._id.toString()) {
+        throw new ConflictRequestError("Name exists");
+      }
     }
 
     return await RoleModel.findOneAndUpdate(
       {
         _id: new mongoose.Types.ObjectId(id),
       },
-      { $set: { name, desc, permissions } },
+      { $set: data },
       { new: true }
     ).lean();
   },

@@ -1,0 +1,26 @@
+@url=http://localhost:8888/api/v1/users
+
+### CREATE
+POST {{url}}
+Content-Type: application/json
+
+{
+  "display_name": "Nguyễn Post",
+  "username": "nguyenpost",
+  "password": "nghuyenpost",
+  "roles": ["649e6d9c85e023c10002a047"]
+}
+
+### Update
+PATCH {{url}}/649e7d088f51a5e7c223d95b
+Content-Type: application/json
+
+{
+  "permissions": ["649e6d5c85e023c10002a042"]
+}
+
+### GET
+GET {{url}}
+
+### GET ID
+GET {{url}}/649e7d088f51a5e7c223d95b

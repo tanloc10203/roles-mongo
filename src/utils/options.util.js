@@ -1,3 +1,5 @@
+"use strict";
+
 exports.comp = (compression) => ({
   level: 6,
   threshold: 100 * 1000,

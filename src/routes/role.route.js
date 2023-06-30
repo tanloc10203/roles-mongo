@@ -16,7 +16,7 @@ router
 router
   .route("/:id")
   .get(asyncHandler(roleController.getById))
-  .patch(validateResource(RoleSchemaInput), asyncHandler(roleController.update))
+  .patch(asyncHandler(roleController.update))
   .delete(asyncHandler(roleController.delete));
 
 module.exports = router;

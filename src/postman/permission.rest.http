@@ -5,9 +5,9 @@ POST {{url}}
 Content-Type: application/json
 
 {
-  "name": "Product Update",
-  "desc": "Them san pham",
-  "alias": "product.update"
+  "name": "Post View",
+  "desc": "Xem bài viết",
+  "alias": "post.view"
 }
 
 ### Update
@@ -15,8 +15,8 @@ PATCH {{url}}/649e5327c87767850e8ef701
 Content-Type: application/json
 
 {
-  "name": "Product update",
-  "desc": "Them san pham",
+  "name": "Product add",
+  "desc": "Thêm sản phẩm",
   "alias": "product.add"
 }
 
