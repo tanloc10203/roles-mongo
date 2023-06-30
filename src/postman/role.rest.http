@@ -1,0 +1,27 @@
+@url=http://localhost:8888/api/v1/roles
+
+### CREATE
+POST {{url}}
+Content-Type: application/json
+
+{
+  "name": "Product Manager",
+  "desc": "Quản lý sản phẩm",
+  "permissions": ["649e5327c87767850e8ef701", "649e534ac87767850e8ef708"]
+}
+
+### Update
+PATCH {{url}}/649e5c1e7d7305f3931700a3
+Content-Type: application/json
+
+{
+  "name": "Product Manager",
+  "desc": "Quản lý sản phẩm",
+  "permissions": ["649e5327c87767850e8ef701", "649e534ac87767850e8ef708"]
+}
+
+### GET
+GET {{url}}
+
+### GET ID
+GET {{url}}/649e5c1e7d7305f3931700a3

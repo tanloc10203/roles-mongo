@@ -1,0 +1,27 @@
+@url=http://localhost:8888/api/v1/permissions
+
+### CREATE
+POST {{url}}
+Content-Type: application/json
+
+{
+  "name": "Product Update",
+  "desc": "Them san pham",
+  "alias": "product.update"
+}
+
+### Update
+PATCH {{url}}/649e5327c87767850e8ef701
+Content-Type: application/json
+
+{
+  "name": "Product update",
+  "desc": "Them san pham",
+  "alias": "product.add"
+}
+
+### GET
+GET {{url}}
+
+### GET ID
+GET {{url}}/649e5327c87767850e8ef701
